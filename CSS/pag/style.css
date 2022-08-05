@@ -1,0 +1,92 @@
+@font-face {
+    font-family: letra;
+    src: url(assets/Olives/OlivessansPimiento.ttf);}
+
+
+.cabecera{
+    background-color: #E1C03E;
+    overflow: hidden;
+    width: 100%;
+    height: 20%;
+}
+.logo{
+    
+    width: 100%;
+    height: cover;
+
+}
+.title{
+    text-align: center;
+    color:rgb(13, 12, 12);
+    padding: 6px;
+    font-family: letra;
+    font-size: 4rem;
+
+}
+.links{
+  
+display: inline-block;
+;}
+
+a{
+    border: 2px solid #E1C03E;
+    background-color: rgb(33, 28, 28);
+    color:#E1C03E;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    font-family: letra;
+    font-size: 2rem;
+    border-radius: 10px;
+    
+}
+.container{
+
+    width: 100%;
+    height: 100%;
+    background-color: rgb(152, 150, 150);
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+   
+}
+.texto1{
+    background-image: url(assets/chess.jpg);
+    background-position: left;
+    image-repeat: no-repeat;
+    width:75%;
+    height:100%;
+    color: white;
+    
+    
+}
+.texto2{
+    background-image: url(assets/chess.jpg);
+    background-position: left;
+    image-repeat: no-repeat;
+    width:50%;
+    height:100%;
+    color: white;
+    
+    
+}
+.texto3{
+    background-image: url(assets/chess.jpg);
+    background-position: left;
+    image-repeat: no-repeat;
+    width:75%;
+    height:100%;
+    color: white;
+    
+     
+    
+}
+.texto4{
+    background-image: url(assets/chess.jpg);
+    background-position: left;
+    image-repeat: no-repeat;
+    width:100%;
+    height:100%;
+    color: rgb(255, 255, 255);
+}

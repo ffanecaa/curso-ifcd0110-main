@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background </title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body class=fondo2 >
+    
+    <header class="cabeza">
+        <a href="index.html">inicio</a>
+        <a href="contacto.html">contacto</a>
+        <a href="oferta.html">oferta</a>
+        
+    </header>
+  
+   <form >
+    <ul>
+        <h2>Envíanos tus datos</h2>
+        <h1>Cubre el formulario</h1>
+        <li>
+            <label for="nombre"><span >*</span> Tu nombre</label><br>
+            <input id="nombre" type="text" name="nombre" required>
+
+        </li>
+        <li>
+            <label for="edad">Tu edad</label><br>
+            <input id="edad"type="number" name="edad">
+
+        </li>
+        <li>
+            <label for="email"><span>*</span> Email</label><br>
+            <input id="email" type="email" name="email" required>
+
+        </li>
+        <li>
+            <label for="telefono">Tefefono</label><br>
+           <input id="telefono"type="tel" maxlength="9">
+        </li>
+        <li>
+            
+            <span>*</span> ¿Cómo vendrás al centro?
+            <br>
+            <input type="radio" id="vehiculo" name="transporte" value="vehiculo" required>
+            <label for="vehiculo">Tengo vehículo</label><br>
+            <input type="radio" id="andando" name="transporte" value="andando">
+            <label for="andando">Voy andando</label>
+        </li>
+        <li>
+            ¿ Qué vehículos tienes ?<br>
+            <input type="checkbox" id="coche" name="vehiculo" value="coche">
+            <label for="coche">Tengo coche</label><br>
+            <input type="checkbox" id="moto" name="vehiculo" value="moto">
+            <label for="moto">Tengo moto </label><br>
+            <input type="checkbox" id="patinete" name="vehiculo" value="patinete">
+            <label for="patinete">Tengo patinete</label>
+        </li>
+        <li>
+            ¿Qué curso quieres?
+            <label for="curso">Elige uno</label>
+
+            <select name="curso" id="curso">
+                <option value="">Elige uno...</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JAVASCRIPT</option>
+            </select>
+        </li><br>
+        <li>
+
+            <input type="submit" value="Enviar">
+
+        </li>
+    </ul>
+</form>
+</body>
+</html>

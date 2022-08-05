@@ -1,0 +1,118 @@
+.fondo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgb(129, 129, 221);
+    width: 100%;
+    height: 100%;
+    animation-name: fondo;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.sol{
+    background: yellow;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:5%;
+    left:-50px;
+    border-radius:100px;
+    box-shadow: 0px 0px 0px  10px  grey;
+    animation-name: sol;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes sol{
+    0%{ left:-50px; top:30%;}
+    50%{ left:50%; top:5%; background-color: rgb(226, 152, 40);}
+100%{ left:100%; top:30%; background-color: beige;box-shadow: 0px 0px 0px  10px  rgb(103, 104, 102); }
+}
+@keyframes fondo{
+    50%{background-color: rgba(50, 50, 122, 0.8) ;}
+    100%{ background-color: rgb(48, 44, 44) }
+}
+.nubes{
+    background-image: url(fondo1.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    top:10%;
+    left: 0px;
+    height: 174px;
+    width: 100%;
+    animation-name: nubes;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+}
+@keyframes nubes{
+    from{background-position: 0 0;}
+    to{background-position: 100% 0;}
+}
+
+
+.ciudad{
+    background-image: url(ciudad.png);
+    background-repeat: repeat-x;
+    background-position:0px 100px ;
+    position: absolute;
+    top:0%;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    animation-name: ciudad;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+@keyframes ciudad{
+    from{background-position: 0 100%;}
+    to{background-position: 100% 100%;}
+}
+
+.bici{
+    width: 145px;
+    height: 80px;
+    position: absolute;
+    bottom: 10%;
+    left:50%;
+    text-align: center;
+}
+.bici .marco{
+    background-image: url(marcobici.png);
+    display: inline-block;
+    width: 98px;
+    height: 56px;
+    z-index:3;
+
+}
+.bici .llanta{
+    background-image: url(llanta.png);
+   width: 55px;
+    height:56px;
+    display: inline-block;
+    position: absolute;
+    animation-name: llanta;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform: rotate(0deg);
+}
+.llan1{
+    top:40px;
+    left:-20px;
+    z-index:2;
+}
+.llan2{
+    top:38px;
+    left:90px;
+    z-index:1;
+}
+
+@keyframes llanta{
+    from{ transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+
+}

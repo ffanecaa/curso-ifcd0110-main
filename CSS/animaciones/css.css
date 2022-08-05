@@ -1,0 +1,40 @@
+body{
+    background-color: yellow;
+}
+.words{
+    color:rgb(255, 208, 0);
+    font-size: 0;
+    line-height: 1.5;
+
+}
+.words span {
+    font-size: 5rem;
+   /* display: inline-block;*/
+    animation: move 3s ease-in-out infinite ;
+}
+@keyframes move { 
+    0% {
+        transform: translate(-30, 10);
+
+}
+50%{
+    text-shadow: 0 25px 50px rgb(7, 5, 5);
+}
+100% {
+    transform: traslate(80%, 90%);
+   
+}
+}
+.words span:nth-last-child(2) {
+    animation-delay: 0.5s;
+}
+.words span:nth-last-child(3) {
+    animation-delay: 1s;
+    text-shadow: 0 25px 50px red;
+}
+.words span:nth-last-child(4) {
+    animation-delay:2s ;
+}
+.words span:nth-last-child(5) {
+    animation-delay: 0.5s;
+}

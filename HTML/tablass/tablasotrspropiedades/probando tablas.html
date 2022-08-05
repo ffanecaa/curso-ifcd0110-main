@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>tablasss</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black; border-color: blueviolet;
+
+                
+                border-collapse: collapse;
+                
+                border-style:inset;
+        } 
+
+            th,
+            td { 
+                background-color: rgb(139, 57, 57);
+                padding: 15px;
+
+               
+            }
+    </style> <!--collapse evitar linea doble, border-radius redondea celdaborder-radius: 8px; s-->
+</head>
+
+<body>
+    <table style="width:70%">
+        <caption style="color: blueviolet;">titulo tabla caption siempre dspues tabla</caption>
+        <colgroup>
+            <!--despues de caption antes tr -->
+            <col span="3" style="background-color:rgb(218, 218, 188)">
+
+        </colgroup>
+        <thead style="color:rgb(255, 187, 0)">
+            <tr>
+                <td> titulo</td>
+                <td>ESE </td>
+                <td>AQUEL </td>
+                <td> ESO</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>AQUI </td>
+                <td> ALLI</td>
+                <td> ACA</td>
+                <td>AAA </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>JSF </td>
+                <td>DFD </td>
+                <td>FDF </td>
+                <td>FDF </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

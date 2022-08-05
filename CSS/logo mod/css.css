@@ -1,0 +1,37 @@
+.exterior{
+
+    background-color: rgb(79, 167, 79);
+    position: relative;
+    height: 900px;
+    width: 900px;
+    margin:40px;
+    border-radius: 50%;
+   
+}
+
+.blanco{
+    background-color: rgb(221, 221, 161);
+    position: absolute;
+    top:200px;
+    right:200px;
+    width: 500px;
+    height:500px;
+    border-radius: 50%;
+
+}
+.interior{
+    background-color: rgb(36, 143, 81);
+    position: absolute;
+    top:100px;
+    right: 100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+span{
+    position: absolute;
+    top:50%;
+    right: 40%;
+    align-items: center;
+    font-size: 2em;
+}

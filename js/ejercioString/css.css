@@ -1,0 +1,46 @@
+body{
+    background-color:rgb(165, 224, 29);
+    margin:100px;
+}
+
+
+
+#resta{
+    padding: 25px;
+    border-radius: 10px;
+    color:red;
+    margin:40px;
+
+
+}
+#sumar{
+
+    padding: 25px;
+    border-radius: 10px;
+    color:red;
+    margin:20px;
+
+}
+#ele{
+    padding:10px;
+    display: inline-block;
+    font-size: 5em;
+    color:rgb(245, 241, 241);
+    border: 5px;
+    background-color: rgb(205, 39, 39);
+    border-radius: 15px;
+    box-shadow: 15px 15px 35px rgb(199, 124, 124);
+
+}
+#ella{
+    padding: 10px;
+    font-size: 3em;
+    color:red;
+    background:rgb(165, 224, 29);
+    height:300px;
+    
+}
+div{
+    margin:30px;
+   
+}

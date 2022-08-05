@@ -1,0 +1,30 @@
+header{
+    border: 2px solid #00f;
+    width: auto;
+    margin: 30px 10px;
+    padding:10px;
+    
+}
+article h2{
+    border: 2px solid #aaa;
+    width: auto;
+    margin: 15px;
+    padding: 5px;
+}
+article ul{
+    border: 2px solid #0f0;
+    margin: 15px;
+}
+li{
+   padding: 15px;
+}
+#lista{
+    padding-bottom: 0;
+}
+
+article p {
+    
+width:100%;
+margin: 15px;
+   
+}

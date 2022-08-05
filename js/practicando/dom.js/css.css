@@ -1,0 +1,17 @@
+a,
+button{
+    display: block;
+padding:40px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin-bottom: 10px;
+}
+.red{
+    background: red;
+}
+.green{
+    background: green;
+}/*crea clases sin asignar luego con classList*/

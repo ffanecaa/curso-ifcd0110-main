@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>formulario datos</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <navbar>
+    <ul id="menu">
+      <li> <a href="noticias.html" target="_blank">noticias</a></li>
+      <li><a href="link.html" target="_blank">link</a></li>
+    </ul>
+
+  </navbar>
+  <header>
+    <p style="border:1px" id="logo">
+      <img src="raspa1.png" width="100">
+
+    </p>
+
+
+  </header>
+
+
+
+
+
+
+
+  <footer>
+    <h1>formulario</h1>
+    <table>
+      <form>
+        <tr>
+          <td> <label for="nombre">nombre</label><br></td>
+          <td><input type="text" id="nombre" maxlength="18" size="10"></td>
+        </tr><br>
+        <tr>
+          <td><label for="apellido">apellido</label></td>
+          <td><input type="text" id="apellido" maxlength="18" size="10"></td>
+        </tr>
+        <tr>
+          <td><label for="tel">telefono</label></td>
+          <td><input type="tel" id="tel" maxlength="9" size="9" required=""></td>
+        </tr>
+        <tr>
+          <td><label for="date">fecha de nacimiento</label></td>
+          <td><input type="date" id="date"></td>
+        </tr>
+
+        <tr>
+          <td rowspan="2"><label for="genero">genero</label></td>
+          <td><input type="radio" id="mujer" name="genero" value="mujer">mujer</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="hombre" name="genero" value="hombre">hombre
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">correo</label></td>
+          <td><input type="email" id="email" name="email" value="email" placeholder="aej:a@a.com"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="Enviar"></td>
+          <!--style="background-color:rgb(72, 72, 88);color:white"-->
+          </td>
+        </tr>
+
+      </form>
+    </table>
+  </footer>
+</body>
+
+</html>

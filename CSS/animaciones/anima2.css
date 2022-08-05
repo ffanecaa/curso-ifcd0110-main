@@ -1,0 +1,59 @@
+#animacion{
+height: 250px;
+width: 250px;
+margin: 0 auto;
+background-color: red;
+animation-name: animar;
+animation-duration: 1.5s;
+animation-timing-function: ease-out;
+border-radius: 20%;
+animation-delay: 0;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+animation-fill-mode: none;
+animation-play-state: running;
+
+
+}
+@keyframes animar{
+0%{
+    transform: scale(0.3);
+    background-color: rgb(255, 0, 179);
+    border-radius: 100%;
+}
+50%{
+    background-color: rgb(170, 63, 81);
+    border-radius: 10%;
+}
+100%{
+    transform: scale(1.5);
+    background-color: brown;
+    box-shadow: 5px 10px 1px rgb(143, 60, 60);
+}
+}
+h1{
+    background-color: blue;
+    animation-name: titulo;
+    display: inline-block;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+   animation-fill-mode: none;
+    animation-play-state: running;
+   animation-timing-function: ease-out;
+margin: 60px;
+   border-radius: 100%;
+animation-delay: 0;
+  width: 200px;
+  height: 200px;
+  padding-top: 80px;
+  padding-left:10px;
+color:white;
+}
+@keyframes titulo{
+    0%   {background-color:red; left:0px; top:0px;} 
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}

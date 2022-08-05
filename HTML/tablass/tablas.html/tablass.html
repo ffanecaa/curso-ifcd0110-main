@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 4px;
+
+        }
+        .orange{color orange}
+
+        table {
+            width: 100%;
+            background-color:gainsboro;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ejercicio tabla</h1>
+    <!--creaccion de tabla 3x4
+ -->
+    <table>
+        <!--alineamos el txt a la primera linea y le damos fondo de color rojo-->
+        <tr style="text-align:center;background-color:rgb(233, 78, 78);">
+            <td>nombre
+
+            </td>
+            <th style="width:70%">apellido
+
+            </td>
+            <td>telefono
+
+            </td>
+            <td>email
+
+            </td>
+
+
+        </tr>
+
+        <tr id="primera celda"></tr>> <!--combinar celdas en vertical-->
+            <td rowspan="2">name
+
+            </td>
+            <td class="orange"> esto
+            </td>
+            <td>eso</td>
+            <td>aquello</td>
+
+           
+
+            </td> <!--vuelvo a tener que borrar la ultima para que no genere una columna fantasma-->
+            
+        <tr>
+            <!--combinar celdas-->
+            <td colspan="2">cosas
+
+            </td>
+            <td>mas
+
+            </td>
+            
+            <!--combinar celdas me tengo que cargar una td pq sino hace 5-->
+           <!-- <td>0</td> la borro -->
+           
+
+    
+
+    </table>
+</body>
+
+</html>

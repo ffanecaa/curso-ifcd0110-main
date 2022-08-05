@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fORMULARIO</title>
+  </head>
+  <body>
+    <!--VAMOS A CREAR UN RFORMULARIO WEB-->
+    <h1>formulario</h1>
+    <h2>introduce los datos</h2>
+    <form>
+      <label for="nombre">escribe tu nombre </label><br>
+      <input type="text" value=""id="nombre" name="nombre" maxlength="15"><br><br>
+      <!--hacer obligatorio rellenar requiere-->
+
+      <label for="apellido">pon aqui tu apellido</label><br><span style="color:red"<cite>campo requerido</cite></span><br>
+      <input type="text" value=""id="apellido" name="apellido"required size="40"><br> <!--id solo tiene que ser unica -->
+      <label for="mail">escribe tu mail</label><br>
+      <input type="email"value=""placeholder="aej:a@a.com" id="mail"name="mail"><br>
+      <label for="edad">edad</label><!--label for vincula con id de input y hace que al pinchar en el titulo nos permita ya ingresar datos en el formulario-->
+      <br>
+      <input type="number" min="1"max="1000"id="edad"><br><!--number genera numeros con min y maximo delimita los q se pueden poner-->
+      <label for="tel">telefono </label><br>
+      <input type="tel" id="tel"><br>
+  
+      
+      
+      
+        <br><input type="submit" value="Enviar"><!--envia el formulario-->
+    </form>
+
+
+
+
+
+  </body>
+</html>

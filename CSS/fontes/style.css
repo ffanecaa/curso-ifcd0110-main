@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@1,900&display=swap');
+h1, h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 80px;
+    color: rgb(218, 182, 182);
+    text-shadow: 2px 2px 4px #000;
+}
+body{ font-size: 16px;}
+#fondo { background-image: url(bandera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position :absolute;
+    top:0;
+    left:0;
+    background-position:center;
+    
+    
+   }
+   
+    
+.texto{  
+       
+   
+    width: 60%;
+    position: absolute;
+    top:30%;
+    left: 30%;
+    text-align:center;
+    color: white;
+ } 
+
+  

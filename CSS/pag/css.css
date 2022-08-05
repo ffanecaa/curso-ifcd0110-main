@@ -1,0 +1,223 @@
+@font-face {
+    font-family: letra;
+    src: url(assets/Olives/OlivessansPimiento.ttf);
+}
+.cabecera  {
+    
+    overflow: hidden;
+
+    display:inline-block;
+
+    background-color:rgba(233, 233, 146, 0.8);
+    width: 100vw;
+    height:500px ;
+    margin-top: 0;
+    text-align: center;
+    font-family: letra;
+    font-size: 2rem;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+   width: 50vw;
+    
+    background-image: url(assets/Olives/logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    
+  filter:grayscale(100%);
+  margin-top:0;
+}
+
+.title {
+    text-align: center;
+  color:rgb(56, 51, 51);
+    padding: 40px;
+
+}
+span {
+    color:rgb(12, 10, 14);
+   text-shadow: 15px 15px rgb(233, 233, 146,) 15px;
+}
+
+
+.links {
+    position: relative;
+    top: 30px;
+    left: 300px;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    color:rgb(237, 237, 168);
+    text-decoration:none;}
+
+    
+
+
+a {
+    color: rgb(233, 233, 168);
+    text-shadow: 15px 15px rgb(22, 22, 19) 15px;
+    text-decoration:none;
+    font-size: 3rem;
+    font-family:letra;
+    padding-right: 40px;
+}
+titulo {
+    text-align: center;
+    color: #D14F4F;
+    font-size: 50px;
+    font-family: sans-serif;
+    margin: 10px;
+}
+/*
+.container {
+   
+  display: table;
+  clear: both;
+  margin-top: 100px;
+  background-color:rgba(237,237,168,0.2); 
+  margin-left: 30px;
+  margin-right: 30px;
+  position:fixed;
+ 
+  width: 100%;
+}
+
+.texto {
+    
+    float: left;
+  width: 39.33%;
+  
+  padding: 20px 60px;
+}
+
+.texto1{
+    position: absolute;
+    top:0;
+    left:0;
+    color: rgb 237,237,168;
+    background-image: url(assets/telon.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    opacity: 0.8;
+    color: rgb(237,237,168);
+    font-weight: strong;
+    padding-bottom: 100px;
+   
+
+  
+}
+.texto2{
+    position: absolute;
+    top:0;
+    left:50%,
+    color: rgb 237,237,168;
+    background-image: url(assets/bessie.jpeg.crdownload);
+    background-color: 237,237,168;
+    background-repeat: no-repeat;
+   
+    color: rgb(237,237,168);
+    font-weight: strong;
+    
+
+<<<<<<< HEAD
+  
+}
+.texto3{position: absolute;
+    top:100px;
+    left:0px;
+    color: rgb 237,237,168;
+    background-image: url(assets/telon.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    opacity: 0.8;
+    color: rgb(237,237,168);
+    font-weight: strong;
+  
+}
+.texto4{
+    position: absolute;
+    top:500px;
+    left:964px;
+    color: rgb 237,237,168;
+    background-image: url(assets/bessie.jpeg.crdownload);
+    background-color: 237,237,168;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+   color: rgb(237,237,168);
+    font-weight: strong;
+}
+/*@media screen and (max-width: 600px) 
+    .texto {
+      width: 200% }*/
+
+
+    
+
+
+      .container {
+   
+        display: table;
+        /*clear: both;*/
+        margin-top: 50px;
+      }
+      
+      .texto {
+          
+          float: left;
+        width: 39.33%;
+        padding: 40px;
+        background-color: rgb(237,237,168);
+        margin-left: 20px;
+        border: 2px solid rgb(24, 24, 21);
+        border-radius: 10%;
+        padding: 10px;
+        margin-bottom: 40px;
+        margin-left: 90px;
+        font-family: letra, sans-serif;
+        
+      
+      }
+      
+    
+      
+      
+      
+      
+   
+      .pie{
+      
+          
+          text-align:center;
+          background-color: #E1C03E;
+          border:4px solid #D14F4F;
+          overflow: hidden;
+          margin-top: 100px;}
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.pie{
+
+    position:rabsolute;
+    top:0%;
+    left:0%;
+    text-align:center;
+    
+    overflow: hidden;
+    margin-top: 100px;*/

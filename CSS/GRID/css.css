@@ -1,0 +1,91 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(239, 232, 222);
+    color: black;
+    font-size: 16px;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1900px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header"
+                        "contenido contenido lateral"
+                        "wid1 wid2 lateral"
+                        "pie pie pie "
+
+    
+}
+.header{
+    background-color: rgb(133, 133, 145);
+    background-image: url"(guitar.jpg)";
+    color: beige;
+    grid-area: header;
+    height: 100px;
+}
+
+
+
+.contenido{
+    background-color: aqua;
+   grid-area: contenido;
+}
+
+.lateral{
+    background-color: rgb(240, 219, 115);
+
+    grid-area: lateral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wid1, .wid2{
+    background-color: rgb(56, 108, 150);
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    height:100px;
+
+}
+    .wid1{
+        grid-area: wid1;
+    }
+.wid2{
+    grid-area:wid2;
+}
+
+.pie{
+    background-color: rgb(101, 102, 182);
+    grid-area:pie;
+   text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height:100px;
+
+}
+@media screen and (max-width: 760px){
+    .contenedor{
+    
+    grid-template-areas: "header header header"
+                        "contenido contenido contenido"
+                        "lateral lateral lateral"
+                        "wid1 wid1 wid2 "
+                        "pie pie pie "
+    
+    }
+    .lateral{
+        height: 300px;
+    }
+    
+}
