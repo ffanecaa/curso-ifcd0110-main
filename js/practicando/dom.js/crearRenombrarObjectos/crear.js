@@ -12,7 +12,7 @@ document.createdocumentFragment()// fragmento del codigo*/
 
 
 const days=[ 'lunes','martes','miercoles','jueves','viernes',
-'sabado','domingo']
+'sabado','DOMINGO']
 
 
 const title = document.getElementById('title')
@@ -72,10 +72,25 @@ console.dir(fragment);
 
 
 
-
+/*
 for (const day of days){
    const cajonLista=document.createElement('option')
    cajonLista.textContent=day
    fragment.appendChild(cajonLista)
 }
-daysSelect.appendChild(fragment)
+daysSelect.appendChild(fragment)*/
+
+/*en option es muy importante el atributo value
+asi q usaremos para enviarlo los eventos de atributo*/
+
+
+// asi deberiamos mandarlo:
+
+    for (const day of days){
+
+        const cajonLista =document.createElement('option')
+        cajonLista.setAttribute('value',day.toLowerCase())//TENEMOS QUEMANDAR EN MINUSCULA PQ NO SE ACEPTA MAYESCULA EN ATRIBUTO
+        cajonLista.textContent=day
+        fragment.appendChild(cajonLista)
+    }
+    daysSelect.appendChild(fragment)
