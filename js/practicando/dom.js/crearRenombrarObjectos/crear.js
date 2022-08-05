@@ -56,8 +56,26 @@ fragment.appendChild(itemList)
 daysList.appendChild(fragment),
 console.dir(fragment);
 
+//rellenar el select ejemplo:
+//opcion muy pesada pr las vueltas delbucle
+/*for (const day of days){
 
+   daysSelect.innerHTML+= `<option>${day}</option>`
+}
+*/
 
 
 
 // a cada vuelta generamos una etiquesta de lista
+
+
+
+
+
+
+for (const day of days){
+   const cajonLista=document.createElement('option')
+   cajonLista.textContent=day
+   fragment.appendChild(cajonLista)
+}
+daysSelect.appendChild(fragment)
