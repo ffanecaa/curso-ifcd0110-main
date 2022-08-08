@@ -394,7 +394,7 @@ el programa procesa asi: mandamos q imprima valor i
 */
     //  otro ejemplo 
 /*
-    for(let i =0;i<=10; i++){
+    for(let0 i =0;i<=10; i++){
         console.log(i);
     }
        //imprime del 0 al 10 
