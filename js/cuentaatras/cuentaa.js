@@ -14,4 +14,4 @@ document.getElementById('reloj').innerHTML= days +  "dias" +hours +'h'+ minutes+
 })
 
 
-// preparar con nomenclatura funcino de flecha 
+// preparar con nomenclatura funcino de flecha
