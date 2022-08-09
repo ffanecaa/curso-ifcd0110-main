@@ -59,3 +59,14 @@ console.log(numeros[creando6])
 
 document.getElementById('ele').innerHTML=(`los numeros premiados son el ${numeros[creando1]},${(numeros[creando2])},${(numeros[creando3])},${(numeros [creando4])},${numeros[creando5]},${(numeros[creando6])}`)
 */
+
+
+const num [45,4,9,16,25 ]
+const num2 [ 45,4 16]
+
+
+
+const dife = users.reduce((cont,user)=>{
+  if(user.online) cont++
+  return cont
+},0) 
