@@ -70,3 +70,5 @@ const dife = users.reduce((cont,user)=>{
   if(user.online) cont++
   return cont
 },0) 
+
+/* fech()  devuelve un objecto es una api // sustituye XMLHRequest
