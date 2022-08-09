@@ -1,8 +1,8 @@
 let atras = new Date("jan 5, 2026 15:56:25").getTime();
-let ahora = new Date ().getTime();
 
-var x = setInterval(function() {
 
+let x = setInterval(function() {
+let ahora = new Date ().getTime()
 let resta = atras-ahora ;
 let days = Math.floor(resta /(1000*60*60*24));
 let hours= Math.floor((resta%(1000*60*60*24))/(1000*60*60));
@@ -14,5 +14,4 @@ document.getElementById('reloj').innerHTML= days +  "dias" +hours +'h'+ minutes+
 })
 
 
-
-    pendiente 
+// preparar con nomenclatura funcino de flecha 
