@@ -2,16 +2,13 @@
 
 //let numa = prompt('escribe 10 numeros ')
 //let lista = nua.push()
-const lista =[]
 
+const numeros= [];
 for ( let i=0; i<=4;i++) {
-   const lista = prompt( 'ponun numero')
+ prompt( 'pon un numero')
     
-    console.log(lista)
 } 
-
-
-
-
-//console.log(lista.sort((a,b)=>b-a));
- // ordena de mayor a menor
+/*
+numeros.push[i]=
+console.log(numeros)
+ */
