@@ -13,3 +13,4 @@ http://developer.mozilla.org/es/docs/web/HTTP/status
 
 las peticiones se hacen por php: apache
 
+*/
