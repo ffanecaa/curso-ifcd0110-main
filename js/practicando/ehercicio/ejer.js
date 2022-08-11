@@ -20,12 +20,20 @@ for ( let i=0; i<=4;i++) {
 }*/
 
 
+let datosUser= []
 
 for ( let i=0; i<=4;i++) {
- numeros=prompt( 'pon un numero')
- c
+  datosUser= datosUser.push(prompt('escribe numeros'+,))
  
- 
+
+ console.log(datosUser )
+  
+  
+  
+  
+
+
+
 
 
 }
