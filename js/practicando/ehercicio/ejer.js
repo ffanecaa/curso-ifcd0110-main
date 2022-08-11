@@ -20,7 +20,7 @@ for ( let i=0; i<=4;i++) {
 }*/
 
 
-let datosUser= []
+let datosUser;
 
 for ( let i=0; i<=4;i++) {
   datosUser= datosUser.push(prompt('escribe numeros'+,))
