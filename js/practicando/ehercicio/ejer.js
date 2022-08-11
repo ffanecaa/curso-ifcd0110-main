@@ -19,22 +19,16 @@ for ( let i=0; i<=4;i++) {
   console.log(num)
 }*/
 
-
+let user;
 let datosUser;
 
-for ( let i=0; i<=4;i++) {
-  datosUser= datosUser.push(prompt('escribe numeros'+,))
+for ( let i=0; i<=4;i++){
+user=(prompt('escribe numeros'));
+ for users of user{
+ users= user.split()
  
-
- console.log(datosUser )
+ }
+  }
   
-  
-  
-  
-
-
-
-
-
-}
-
+console.log(datosUser)
+//
