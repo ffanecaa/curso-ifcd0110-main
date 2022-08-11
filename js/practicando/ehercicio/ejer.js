@@ -5,10 +5,10 @@
 
 const numeros= [];
 for ( let i=0; i<=4;i++) {
- prompt( 'pon un numero')
-    
+ numeros.push[i]=prompt( 'pon un numero')
+   console 
 } 
-/*
-numeros.push[i]=
-console.log(numeros)
- */
+
+
+
+ 
