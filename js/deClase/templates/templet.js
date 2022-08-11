@@ -24,7 +24,7 @@ let hours= Math.floor((resta%(1000*60*60*24))/(1000*60*60));
 let minutes= Math.floor((resta% (1000*60*60))/(1000*60));
 let seconds= Math.floor( (resta% (1000*60)/1000));
 
-document.getElementById('ele').innerHTML= `  Faltan:<br> ${days} dias <br>${hours} horas  <br>  ${minutes} minutos <br>${seconds} segundos`
+document.getElementById('ele').innerHTML= `  Faltan:<br> ${days} días <br>${hours} horas  <br>  ${minutes} minutos <br>${seconds} segundos`
 
 })
 
