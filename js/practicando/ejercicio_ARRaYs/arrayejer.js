@@ -40,6 +40,9 @@ multiplica los numeros del primer array por un numero
 
      console.log( )
 
+    
+     
+
     /*
     //    muls.push(numero*x)
    // for(mul of )
