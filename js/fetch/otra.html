@@ -13,7 +13,7 @@
 <div class="background">
     <p id="ele">nueva pagina</p>
 </div>
-
+ <form id ="form">
     <ul>
          <!-- 
             H1 y H2 aquí van dentro de la etqueta UL para que no se solape con los campos,
@@ -86,13 +86,26 @@
             </select>
         </li>
         <li>
+            <label for="textarea">pon tus comentarioos</label>
+            <input name="textarea" id="textarea"
+        </li>
+        <li>
          
             <input type="submit" name="Enviar" value="Enviar">
 
         </li>
     </ul>
 </form>  
+<script>
+  let formulario =document.getElementById('form')
+  formulario.onsubmit =function (e){
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const datosform = Object.fromEntries(formData);
+    console.log(datosform)
+  }
 
+</script>
 
 
 <footer id="footer"></footer>
