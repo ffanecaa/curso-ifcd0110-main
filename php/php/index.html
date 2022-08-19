@@ -1,137 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
-  
+
 
 </head>
+
 <body>
-<header id="header"></header>
-<div class="background">
-    <p id="ele">nueva pagina</p>
-</div>
-<form target="_self" name="formulario" id="formulario">
-    <!-- Estamos usando lista desordenada para los campos de formulario
+    <header id="header"></header>
+    <div class="background">
+        <p id="ele">nueva pagina</p>
+    </div>
+    <form target="_self" name="formulario" id="formulario">
+        <!-- Estamos usando lista desordenada para los campos de formulario
     Es también habitual hacerlo con los elementos de los menús de navegación
     -->
-    <ul>
-        <!-- 
+        <ul>
+            <!-- 
             H1 y H2 aquí van dentro de la etqueta UL para que no se solape con los campos,
             ya que este UL está en posición absoluta
          -->
-        <h2>Envíanos tus datos</h2>
-        <h1>Cubre el formulario</h1>
-        <!-- 
+            <h2>Envíanos tus datos</h2>
+            <h1>Cubre el formulario</h1>
+            <!-- 
             Empiezan los campos de formulario
          -->
-        <li>
-            <!-- Campo obligatorio tipo texto-->
-            <label for="nombre"><span class="required">*</span> Tu nombre</label><br>
-            <input type="text" name="nombre" id="nombre" required>
+            <li>
+                <!-- Campo obligatorio tipo texto-->
+                <label for="nombre"><span class="required">*</span> Tu nombre</label><br>
+                <input type="text" name="nombre" id="nombre" required>
 
-        </li>
-        <li>
-            <!-- Campo tipo numérico-->
-            <label for="edad">Tu edad</label><br>
-            <input type="number" name="edad">
+            </li>
+            <li>
+                <!-- Campo tipo numérico-->
+                <label for="edad">Tu edad</label><br>
+                <input type="number" name="edad">
 
-        </li>
-        <li>
-            <!-- Campo obligatorio tipo Email-->
-            <label for="email"><span class="required">*</span> Email</label><br>
-            <input type="email" name="email" id="email" required>
+            </li>
+            <li>
+                <!-- Campo obligatorio tipo Email-->
+                <label for="email"><span class="required">*</span> Email</label><br>
+                <input type="email" name="email" id="email" required>
 
-        </li>
-        <li>
-            <!-- Campo tipo Tel (teléfono)-->
-            Teléfono <br>(formato xxx yyy zzz):<br>
-            <input type="tel" name="tel">
-        </li>
-        <li>
-            <!-- inputs tipo Radio-button Llevan el mismo nombre 
+            </li>
+            <li>
+                <!-- Campo tipo Tel (teléfono)-->
+                Teléfono <br>(formato xxx yyy zzz):<br>
+                <input type="tel" name="tel">
+            </li>
+            <li>
+                <!-- inputs tipo Radio-button Llevan el mismo nombre 
                 para que se reciba un solo dato. Es un solo campo con dos inputs que
                 se marca además como obligatorio
             -->
-            <span class="required">*</span> ¿Cómo vendrás al centro?
-            <hr>
-            <input type="radio" id="vehiculo" name="comoviene" value="vehiculo" required>
-            <label for="vehiculo">Tengo vehículo</label><br>
-            <input type="radio" id="andando" name="comoviene" value="andando">
-            <label for="andando">Voy andando</label>
-        </li>
-        <li>
-            <!-- inputs tipo checkbox. Cada uno es un campo.
+                <span class="required">*</span> ¿Cómo vendrás al centro?
+                <br>
+                <input type="radio" id="vehiculo" name="comoviene" value="vehiculo" required>
+                <label for="vehiculo">Tengo vehículo</label><br>
+                <input type="radio" id="andando" name="comoviene" value="andando">
+                <label for="andando">Voy andando</label>
+            </li>
+            <li>
+                <!-- inputs tipo checkbox. Cada uno es un campo.
             -->
-            ¿ Qué vehículos tienes ?<br>
-            <input type="checkbox" id="coche" name="tipo" value="coche">
-            <label for="coche">Tengo coche</label><br>
-            <input type="checkbox" id="moto" name="moto" value="moto">
-            <label for="moto">Tengo moto </label><br>
-            <input type="checkbox" id="barco" name="barco" value="barco">
-            <label for="barco">Tengo barco</label>
-        </li>
-        <li>
-            <!-- Campo tipo select, que crea un menú desplegable con las ociones
+                ¿ Qué vehículos tienes ?<br>
+                <input type="checkbox" id="coche" name="tipo" value="coche">
+                <label for="coche">Tengo coche</label><br>
+                <input type="checkbox" id="moto" name="moto" value="moto">
+                <label for="moto">Tengo moto </label><br>
+                <input type="checkbox" id="barco" name="barco" value="barco">
+                <label for="barco">Tengo barco</label>
+            </li>
+            <li>
+                <!-- Campo tipo select, que crea un menú desplegable con las ociones
             -->
-            ¿Qué curso quieres?
-            <label for="curso">Elige uno</label>
+                ¿Qué curso quieres?
+                <label for="curso">Elige uno</label>
 
-            <select name="curso" id="curso">
-                <option value="">Elige uno...</option>
-                <option value="HTML">HTML</option>
-                <option value="CSS">CSS</option>
-                <!-- Este sería el valor seleccionado por defecto
+                <select name="curso" id="curso">
+                    <option value="">Elige uno...</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <!-- Este sería el valor seleccionado por defecto
             -->
-                <option value="JS" selected>JAVASCRIPT</option>
-            </select>
-        </li>
-        <li>
-            <!-- Botón de enviar.
+                    <option value="JS" selected>JAVASCRIPT</option>
+                </select>
+            </li>
+            <li>
+                <!-- Botón de enviar.
                 Es un input pero no envía valores, 
                 aunque tiene un value que es el texto que se ve en el botón,  
                 y por defecto (si no se pone) es "submit".
             -->
-            <input type="submit" name="Enviar" value="Enviar">
+                <input type="submit" name="Enviar" value="Enviar">
 
-        </li>
-    </ul>
-</form>
-<script>
+            </li>
+        </ul>
+    </form>
+    <script>
 
-    let formul = document.getElementById('formulario');
-    let path = "";
-    formul.onsubmit = function (e) {
-        e.preventDefault();
-        async function envio() {
-            const datos = new FormData(e.target);
-            let toSend = Object.fromEntries(datos);
-            //  console.log(toSend)
-            let enviar = await fetch(path + 'form.php',
-                {
-                    method: 'POST',
-                    /*
-                    * We also need to stringify the values, turn the
-                    * JavaScript object to a single string that is accepted
-                    * as JSON. So we are sending one string that contains
-                    * all our values
-                    */
-                    mode: 'no-cors',
-                    body: JSON.stringify(toSend),
-                    headers: {
-                        'Content-Type': 'application/json'
-                        // 'Content-Type': 'application/x-www-form-urlencoded',
-                    }
-                });
-            let escribir = await enviar.json();
-            document.body.innerHTML = JSON.stringify(escribir)
+        let formul = document.getElementById('formulario');
+        let path = "http://localhost/curso-ifcd0110-main/php/php/";
+        formul.onsubmit = function (e) {
+            alert()
+            e.preventDefault();
+            async function envio() {
+                const datos = new FormData(e.target);
+                let toSend = Object.fromEntries(datos);
+                //  console.log(toSend)
+                let enviar = await fetch(path + 'php.php',
+                    {
+                        method: 'POST',
+                        /*
+                        * We also need to stringify the values, turn the
+                        * JavaScript object to a single string that is accepted
+                        * as JSON. So we are sending one string that contains
+                        * all our values
+                        */
+                       /* mode: 'no-cors',*/
+                        body: JSON.stringify(toSend),
+                        headers: {
+                            'Content-Type': 'application/json'
+                            // 'Content-Type': 'application/x-www-form-urlencoded',
+                        }
+                    });
+                let escribir = await enviar.json();
+                document.body.innerHTML = JSON.stringify(escribir)
+            }
+            envio();
         }
-        envio();}
 
-</script>
-<footer id="footer"></footer>
-    
+    </script>
+    <footer id="footer"></footer>
+
 </body>
+
 </html>
