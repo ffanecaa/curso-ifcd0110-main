@@ -95,32 +95,32 @@
                 aunque tiene un value que es el texto que se ve en el botón,  
                 y por defecto (si no se pone) es "submit".
             -->
-                <input type="submit" name="Enviar" value="Enviar">
+                <input  id ="ele"type="submit" name="Enviar" value="Enviar">
 
             </li>
         </ul>
     </form>
     <script>
 
-        let formul = document.getElementById('formulario');
+        let formul = document.getElementById('formulario');//obtenemos el bojecto del dom
         let path = "http://localhost/curso-ifcd0110-main/php/php/";
         formul.onsubmit = function (e) {
             alert()
-            e.preventDefault();
-            async function envio() {
-                const datos = new FormData(e.target);// parametro objecto 
-                let toSend = Object.fromEntries(datos);/* genera el json*/
+            e.preventDefault(); //detenr envio 
+            async function envio() {  //declaramos funciondatos asincrona
+                const datos = new FormData(e.target);// creamos objecto donde recogemos datos forumulario parametro objecto 
+                let toSend = Object.fromEntries(datos);// genera el json
                 //  console.log(toSend)
                 let enviar = await fetch(path + 'php.php',
                     {
                         method: 'POST',
-                        /*
+                     /*   
                         * We also need to stringify the values, turn the
                         * JavaScript object to a single string that is accepted
                         * as JSON. So we are sending one string that contains
                         * all our values
                         */
-                       /* mode: 'no-cors',*/
+                       // mode: 'no-cors',
                         body: JSON.stringify(toSend),
                         headers: {
                             'Content-Type': 'application/json'
@@ -132,6 +132,7 @@
             }
             envio();
         }
+*
 
     </script>
     <footer id="footer"></footer>
