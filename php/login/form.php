@@ -9,9 +9,9 @@
     // Recogemos todos los datos enviado por el usuario desde l formulario de cliente
      $data = json_decode(file_get_contents('php://input'), true);
      // El nombre de usuARIO QUE DEBE SER
-    $userguardado="ifcd0110";
+    $userguardado="ablaracurcix";
     // El passwoprd que debe ser
-    $passwordguardado="12345";
+    $passwordguardado="pinpanpum";
     //Extraemos de lo0sdatos el dato de nombre de usuario enviado por el client
     $user = $data["user"];
     // Extraemos el password enviado por el cliente
