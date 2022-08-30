@@ -11,7 +11,7 @@
      // El nombre de usuARIO QUE DEBE SER
     $userguardado="ablaracurcix";
     // El passwoprd que debe ser
-    $passwordguardado="pinpanpum";
+    $passwordguardado="12345";
     //Extraemos de lo0sdatos el dato de nombre de usuario enviado por el client
     $user = $data["user"];
     // Extraemos el password enviado por el cliente
