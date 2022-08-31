@@ -14,10 +14,28 @@
      $user = 'ifcd0110';
      $pass = '12345';
      $db = 'classe';
-    if (!mysqli_connect($server, $user, $pass, $db)){
-        echo '<h1>ERROR, no se ha podido conectar con la base de datos</h1>';
-        http_response_code(500);
-        exit;
-    }
-    echo "<h1>ENHORABUENA, te has conectado a la base de datos</h1>";
- exit;
+     $conn = mysqli_connect($server, $user, $pass, $db);
+     if (!$conn) {
+         echo '<h1>ERROR, no se ha podido conectar con la base de datos</h1>';
+         http_response_code(500);
+         exit;
+     }
+     // comprobamos si nos envían todos los datos requeridos, estén bien o mal
+     if (!isset($data["user"]) || !isset($data["password"])) {
+         http_response_code(400);
+         exit;
+     }
+     //echo "<h1>ENHORABUENA, te has coectado a la base de datos</h1>";
+     //Extraemos de los datos el dato de nombre de usuario enviado por el cliente
+     $user = $data["user"];
+     // Extraemos el password enviado por el cliente
+     $password = $data["password"];
+     // Hacemos la consulta para saber si hay un registro que coincida exactamente con lo enviado por el usuario
+     $result = mysqli_query($conn, "SELECT * from user WHERE user ='$user' AND password = '$password'");
+     if (mysqli_num_rows($result)) {
+         // Le damos al usuario lo que quiere.
+         exit;
+     }
+     echo '<h1>ERROR de autenticación</h1>';
+     http_response_code(401);
+     exit;
