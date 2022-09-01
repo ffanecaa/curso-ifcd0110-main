@@ -13,7 +13,7 @@
      $server = 'localhost';
      $user = 'ifcd0110';
      $pass = 'clase-IFCD0110';
-     $db = 'clase';
+     $db = 'classe';
      $conn = mysqli_connect($server, $user, $pass, $db);
         if (!$conn){
             echo '<h1>ERROR, no se ha podido conectar con la base de datos</h1>';

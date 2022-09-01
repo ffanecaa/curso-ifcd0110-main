@@ -67,7 +67,7 @@
         <input type="submit" class="btn btn-primary" id="boton" value="enviar">
     </form>
     <script>
-        let path = "http://localhost/CURSO-IFCD0110/LOGINPHP/";
+        let path = "http://localhost/curso-ifcd0110-main/php/login/";
         let esLogin = sessionStorage.getItem('esLogin') || false;
         let pass = sessionStorage.getItem('password') || false;
         if (!esLogin) location.href = "index.html";
@@ -98,7 +98,7 @@
                 //formul.onsubmit = function (e) {  
                 e.preventDefault();
                 async function envio(listardatos) { // Declaramos la función que enivará los datos
-                    let path = "http://localhost/CURSO-IFCD0110/LOGINPHP/";
+                    let path = "http://localhost/curso-ifcd0110-main/php/login/";
                     const datos = new FormData(e.target); // Aquí recogemos los datos del form                            // convertidos a objeto
                     let toSend = Object.fromEntries(datos); // Creamos el objeto tipo jSon que enviaremos
                     if (toSend.password != toSend.rpassword) {
