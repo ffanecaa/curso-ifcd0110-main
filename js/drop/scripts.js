@@ -58,4 +58,4 @@ finishedTasks.addEventListener('dragstart',(e) =>{
          const element=document.getElementById( e.dataTransfer.getData('text'))
          element.classList.remove('active')
      pendingTasks.appendChild(finishedTasks.removeChild(element))
-  })
+  })//
