@@ -31,19 +31,19 @@ $user = $data["user"];
 // Extraemos el password enviado por el cliente
 $password = $data["password"];
 // Hacemos la consulta para saber si hay un registro que coincida exactamente con lo enviado por el usuario
-$result = mysqli_query($conn, "SELECT * from user WHERE user ='$user'");
+$result = mysqli_query($conn, "SELECT * from user WHERE login ='$user'");
 if (mysqli_num_rows($result)) {
     
     echo 'El usuario ya existe';
     http_response_code(405);
     exit;
 }
-$result = mysqli_query($conn, "INSERT INTO user (user, password) VALUES ('$user','$password')");
+$result = mysqli_query($conn, "INSERT INTO user (login, password) VALUES ('$user','$password')");
 if (!$result) {
     
     echo 'No se ha podido dar de alta el usuario';
     http_response_code(500);
     exit;
 }
-echo 'Bienvemnido '.$user;
+echo 'Bienvenido '.$user;
 exit;
