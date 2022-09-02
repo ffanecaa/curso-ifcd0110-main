@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    background-color: #ec407a;
+    background-color: #0fb79e;
     font-family: sans-serif;
-    color: #fff;
+    color: black;
     user-select: none;
   }
   
@@ -17,15 +17,15 @@ body {
     margin: 0 0 1rem;
     padding: 1rem;
     border-bottom: 1px solid black;
-    background-color: #7e57c2;
+    background-color: #cc6119;
   }
   
   .tasks {
     width: 30%;
     text-align: center;
-    background: rgb(48, 166, 221);
+    background: #2a3035;
     border: 1px solid black;
-    min-height: 130px;
+    min-height: 430px;
   }
   
   .tasks:first-child {
@@ -33,7 +33,7 @@ body {
   }
   
   .task {
-    background-color: #7e57c2;
+    background-color: #cbd0db;
     padding: 1rem;
     border-bottom: 1px solid #000;
     cursor: move;
