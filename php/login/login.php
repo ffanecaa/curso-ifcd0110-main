@@ -10,10 +10,10 @@
      $data = json_decode(file_get_contents('php://input'), true);
      
      // Valores de conexión a la base de datos
-     $server = 'localhost';
-     $user = 'ifcd0110';
-     $pass = 'clase-IFCD0110';
-     $db = 'classe';
+     $server = 'localhost'; // datos de la base de data
+     $user = 'ifcd0110';// usuario
+     $pass = 'clase-IFCD0110'; // contrseña base datos
+     $db = 'classe'; // nombre base datos 
      $conn = mysqli_connect($server, $user, $pass, $db);
         if (!$conn){
             echo '<h1>ERROR, no se ha podido conectar con la base de datos</h1>';

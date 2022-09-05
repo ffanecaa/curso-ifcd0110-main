@@ -71,7 +71,7 @@
         let esLogin = sessionStorage.getItem('esLogin') || false;
         let pass = sessionStorage.getItem('password') || false;
         if (!esLogin) location.href = "index.html";
-        $(document).ready(function () {
+        $(document).ready(function () {  // asincrono 
             async function listardatos() {
 
                 let enviar = await fetch(path + 'perfil.php?user=' + esLogin + '&password=' + pass,
@@ -80,7 +80,7 @@
 
                     }
 
-                ).then(async response => {
+                ).then(async response => {   
                     let datosUsusario = await response.json();
                     let html = `
                     <ul>
@@ -106,7 +106,7 @@
                         $('#rpassword').addClass('fail-repeat');
                         $('#rpassword').focus();
                         return false;
-                    }
+                    }  
                     let enviar = await fetch(path + 'perfil.php', // Enviamos los datos a la url path + endpoint
                         { // 2º parámetro: Ajustes
                             method: 'POST', // POST, GET, PUT , DELETE ..

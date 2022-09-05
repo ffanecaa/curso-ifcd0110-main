@@ -75,7 +75,7 @@ objecto location : es el objecto que contiene la barra de
              forward()
              go(n|-n))
 
-  proiedad Length
+  propiedad Length
 
   /*objecto DATE
 

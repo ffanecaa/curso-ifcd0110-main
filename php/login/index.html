@@ -112,13 +112,13 @@
                 $('#abremodal').show(); 
                 return false;
               } else {
-                sessionStorage.setItem('esLogin', toSend.user);
+                sessionStorage.setItem('esLogin', toSend.user); // datos guardados base datos local
                 sessionStorage.setItem('password', toSend.password);
             /* $('#bienvenida h1').text('Bienvenido de nuevo: ' + toSend.user);
                 $('#bienvenida').show();*/
               }
               location.reload();
-            }).catch(error => {
+            }).catch(error => { // captamos el error
               $("#elModal").modal('hide');
             });
           $("#elModal").modal('hide');
