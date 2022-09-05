@@ -1,0 +1,20 @@
+:root{
+    --primary-color:white;
+
+}
+
+*{
+    box-sizing: border-box;
+    
+}
+
+.card{
+
+}
+
+.list{
+    display:flex;
+    text-decoration:none;
+    ;
+
+}
