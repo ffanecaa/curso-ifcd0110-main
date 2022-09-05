@@ -33,10 +33,10 @@
      $password = $data["password"];
      $result = mysqli_query($conn,"SELECT * from user WHERE login = '$user' && password = '$password'");
      if (mysqli_num_rows($result)){
-        exit;
+        exit; // conectado
      }
      echo 'ERROR de autenticación';
      http_response_code(401);
-    //   echo "<h1>ENHORABUENA, te has coectado a la base de datos</h1>";
+    
  exit;
 
