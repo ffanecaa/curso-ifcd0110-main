@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body id="dark"class="dark">
+    <header class="header">
+      
+      <div class="switches"> <!--contenedor modo oscuro-->
+        <div id="toggle-theme" class="toggle-theme">
+          <img src="assets/icons/moon.svg" alt="icon theme" id="toggle-icon" class="toggle-theme__icon">
+          <p id="toggle-text" class="toggle-theme__text">dark mode</p>
+        </div>
+      </div>
+        <div id="toggle-colors" class="colors"><!--contenedor modo color-->
+          <div data-color="hsl(214,84%,56%)" class="colors__item  colors__item--blue"></div>
+          <div data-color="hsl(150,84%,56%)" class="colors__item  colors__item--green"></div>
+          <div data-color="hsl(276,84%,56%)" class="colors__item  colors__item--purple"></div>
+          <div data-color="hsl(46,84%,56%)" class="colors__item  colors__item--orange"></div>
+          
+
+
+      </div>
+    </header>
+
+      <main class="main">
+        <section class="column column--left">
+          <article class="card card--prolife">
+            <div class="card card__image-container">
+             <img src="assets/images/yo_auto_x2.jpg" alt="">
+            </div>
+            <div class="card__header">
+              <h2 class="card__title">FanecArt</h2>
+              <p class="card__subtitle">junior</p>
+            </div>
+            <div class="car__body">
+              <div class="card__link">
+                <i class="fas fa-envelope icon"></i>
+                <a href="mailto:fanecart@gmail.com">fanecart@gmail.com</a>
+              </div>
+              <div class="card__link">
+                <i class="fas fa-phone-alt icon "></i>
+                <a href="tel:677325661">+34-677325661</a>
+              </div>
+              <p class="card__text">
+                   apasionada de las nuevas tecnologias y en especial de los ecosistemas de css y javascript<br>
+                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro quia consectetur, modi nobis nulla aperiam culpa, eveniet corporis cupiditate tempora fugiat accusantium id reprehenderit rerum ipsum, laborum ex rem accusamus.
+              </p>
+            </div>
+          </article>
+        </section>
+        <section class="column column--right">
+          <article class="card">
+            <h2 class="card__title">Front End</h2>
+
+            <div class="skills">
+              <div class="skills__item">
+              <p class="skills__tech">HTML</p>
+              <div class="skills__bar skills__bar--70"></div>
+            </div>
+            <div class="skills">
+              <div class="skills__item">
+              <p class="skills__tech">CSS</p>
+              <div class="skills__bar skills__bar--70"></div>
+            </div>
+            <div class="skills">
+              <div class="skills__item">
+              <p class="skills__tech">JavaScript</p>
+              <div class="skills__bar skills__bar--60"></div>
+            </div>
+            <div class="skills">
+              <div class="skills__item">
+              <p class="skills__tech">Php</p>
+              <div class="skills__bar skills__bar--60"></div>
+            </div>
+            </div>
+          </article>
+          <article class="card">
+            <h2 class="card__title">Desing</h2>
+
+            <div class="skills">
+              <div class="skills__item">
+              <p class="skills__tech">Photoshop</p>
+              <div class="skills__bar skills__bar--60"></div>
+            </div>
+            <div class="skills">
+              <div class="skills__item">
+              <p class="skills__tech">Illustrator</p>
+              <div class="skills__bar skills__bar--50"></div>
+            </div>
+            <div class="skills">
+              <div class="skills__item">
+              <p class="skills__tech">Blender</p>
+              <div class="skills__bar skills__bar--50"></div>
+            </div>
+            
+            </div>
+          </article>
+          <article class="card">
+            <h2 class="card__title">Multimedia</h2>
+
+            <div class="skills">
+              <div class="skills__item">
+              <p class="skills__tech">After Effects</p>
+              <div class="skills__bar skills__bar--70"></div>
+            </div>
+            
+            
+            </div>
+          </article>
+        </section>
+      </main>
+
+
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
