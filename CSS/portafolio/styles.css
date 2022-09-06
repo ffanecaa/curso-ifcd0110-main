@@ -179,14 +179,22 @@ body.dark {
     font-size: 0.9rem;
     line-height: 1.6em;
 }
+/* solo lo queremos en esxritorio asi q hacemos*/
+@media screen and (min-width: 760px) {
 
+    .card--project{
+        display:grid;
+        grid-template-columns: min-content 1fr;
+        grid-column: 1/ -1; /* hacemos que nos ocupe en horizonal */
+    }
+    }
 .skills {
     padding: 1em 0;
     /*se separe elcontenido de lso bordes*/
 }
 .skills__tech{
      margin:0;
-     font-size:0.8rem;;
+     font-size:0.8rem;
 }
 
 .skills__item {
@@ -287,7 +295,23 @@ body.dark {
     font-size: 0.8rem;
     margin-bottom: 1.5em;
 }
-
+@media screen and (min-width: 760px){
+.project{
+    margin-left: 2em;
+}
+}
+.project__tags{
+    display:flex;
+    justify-content: space-between;
+    margin:0.5 em 0;
+    font-size: 0.6 rem;
+    width:275px;
+}
+@media screen and (min-width: 760px){
+    .project__tags{
+        width: 325px;
+        font-size: 0.8rem;
+    }}
 .icon {
     margin-right: 1em;
 }
