@@ -116,6 +116,7 @@ body.dark {
 .main {
     display: grid;
     padding: 2em;
+    gap:0.5em;
 }
 
 /* adaptamos para escritorio 2 columnas una con el minimo requerido y la otra contodo loq quede*/
@@ -137,7 +138,7 @@ body.dark {
     .column--right {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, min-content);
-    }
+    }/* si queremos que las tarjetas se adapten contenido ponemos aling-items:start*/
 }
 
 .card {
@@ -161,6 +162,7 @@ body.dark {
     margin: 0;
     /* los h2 tiene margen predeterminado */
     font-size: 1.2rem;
+    margin-bottom:1em;
 
 }
 
@@ -182,11 +184,16 @@ body.dark {
     padding: 1em 0;
     /*se separe elcontenido de lso bordes*/
 }
+.skills__tech{
+     margin:0;
+     font-size:0.8rem;;
+}
 
 .skills__item {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom:0.3em;
 }
 
 .skills__bar,
@@ -248,6 +255,37 @@ body.dark {
 
 .skills__bar--90::after {
     --skills-bar-length: 90%;
+}
+.experience{
+    display:flex;
+    align-items:start;
+    padding:1em;
+    margin-bottom : 1em;
+    border-radius: var(--border-radius);
+    border:2px solid var(--primary-color);
+    transition:var(--transition);
+}
+.experience__image{
+    max-width:15%;
+    border-radius: var(--border-radius);
+ 
+}
+.experience__info{
+    padding:1em;
+}
+.experience__time{
+    font-size: 0.8rem;
+    margin-bottom:0.5em;
+}
+.experience__job{
+    margin-bottom:1em;
+    margin:0;
+    color:var(--primary-color);
+    transition:var(--transition);
+}
+.experience__description{
+    font-size: 0.8rem;
+    margin-bottom: 1.5em;
 }
 
 .icon {
