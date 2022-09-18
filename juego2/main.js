@@ -24,7 +24,7 @@ function pelotas(x, y, velX, velY, color, size){  //generamos constructor
   pelotas.prototype.draw = function(){
     ctx.beginPath(); //empiece
     ctx.fillStyle = this.color;
-    ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);//dibujamos pelotas 
+    ctx.rect(this.x, this.y,this.size,6,3)// 0, 2 * Math.PI);//dibujamos pelotas 
     ctx.fill();}
     pelotas.prototype.update = function() {
         if ((this.x + this.size) >= width) {
