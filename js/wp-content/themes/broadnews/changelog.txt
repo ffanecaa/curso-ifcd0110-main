@@ -1,0 +1,9 @@
+### 1.1.1 - July 14 2022 =
+* Update - Improved some design
+
+### 1.0.1 - July 13 2022
+* Update - New imporved dashboard with essentials links
+* Update - Fixed some design glitch
+
+### 1.0.0 - July 08 2022 
+* Initial release
