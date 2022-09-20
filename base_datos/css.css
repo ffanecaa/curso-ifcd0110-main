@@ -1,0 +1,37 @@
+.form {
+    background-color: grey;
+    width:500px;
+    color:white;
+   margin:auto ;
+   border-radius: 10px;
+}
+label{
+    font-size: 2em;
+ display:flex ;
+ cursor: pointer;
+
+margin-left: 25px;
+
+    }
+   input{
+    margin-left: 150px;
+}
+.botton{
+    background-color: rgb(36, 165, 201);
+    color:whitesmoke;
+    border-radius: 50px;
+    font-size: 2em;
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 80px;
+}
+.title{
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 5px 4px 0.5px rgb(189, 97, 97) ;
+    color: grey;
+}
+.botton:hover{
+    background-color: aqua;
+    color:rgb(255, 47, 47);
+}
