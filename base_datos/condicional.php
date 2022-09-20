@@ -15,17 +15,17 @@ if ( $variable1 < 18 ){
     echo "bienvenido". " ";
 }
 
-// swith case si hay muchos anidades es mejor
+
 
 
 //anidados 
 if($varaible3 == "hola"){
     if($variable1 = 85){
+
         echo "todo correcto";
      }
 }
-
-
+// swith case si hay muchos anidades es mejor
 
 
 ?>
