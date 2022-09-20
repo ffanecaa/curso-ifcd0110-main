@@ -1,31 +1,52 @@
 <?php
 
-$variable1 = 25;
+$variable1 = 5;
 $variable2 = 45;
-$varaible3 = 'hola';
+$variable3 = 'hola';
 
 if ( $variable1 < 18 ){
     echo "no puedes entrar";
-    $varaible3 = "usuario";
-    echo $varaible3;
+    $variable3 = "usuario";
+    echo $variable3."<br>";
 } else if ($variable1 > 67){
-    $varaible3 = "usuario";
-    echo "jubilado". " ". $varaible3; 
+    $variable3 = "usuario";
+    echo "jubilado". " ". $variable3; 
 } else {
-    echo "bienvenido". " ";
+    echo "bienvenido". "<br> ";
 }
 
 
 
 
 //anidados 
-if($varaible3 == "hola"){
-    if($variable1 = 85){
+if($variable3 == "hola"){
+    if($variable1 == 85){
 
-        echo "todo correcto";
+        echo "todo correcto <br>";
      }
 }
+
+
+ if( ($variable3 == "hola") AND ( $variable1 == 85)){
+    echo "todo correcto <br>";
+}
 // swith case si hay muchos anidades es mejor
+
+switch($variable1 ){
+    case 1: echo "lunes ";
+      break;
+    case 2: echo "martes ";
+      break; 
+    case 3: echo "miercoles ";
+      break;
+      case 4: echo "jueves";
+      break;
+      case 5: echo "viernes ";
+      break;
+      default: echo "no es laborable";
+      break;
+}
+
 
 
 ?>
