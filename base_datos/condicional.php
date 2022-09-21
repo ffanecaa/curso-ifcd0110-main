@@ -49,7 +49,7 @@ switch($variable1 ){
 
 $i= 1; // los contadores son 
  
-while ($i<10){
+while ($i<=10){
   echo " <br>vuelta numero $i <br>";
   $i++;
 }
@@ -61,6 +61,10 @@ while (($variable3 == "usuario") or($variable3 == "Usuario" )){
   
 }
 // validar 
+
+for($i = 0 ; $i<=10 ; $i++){
+  echo "<br> dando voltas $i";
+}
 
 
 ?>
