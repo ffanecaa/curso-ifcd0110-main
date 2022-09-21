@@ -20,10 +20,10 @@ function pelotas(x, y, velX, velY, color, size){  //generamos constructor
     this.velY = velY;
     this.color = color;
     this.size=  size;
-  }
+  }// obj prototipo 
   pelotas.prototype.draw = function(){
     ctx.beginPath(); //empiece
-    ctx.fillStyle = this.color;
+    ctx.fillStyle = this.color;// color forma 0 propiedad color
     ctx.rect(this.x, this.y,this.size,6,3)// 0, 2 * Math.PI);//dibujamos pelotas 
     ctx.fill();}
     pelotas.prototype.update = function() {
