@@ -88,7 +88,7 @@ for($i = 0 ; $i<=10 ; $i+=2){
   if ($i%2 == 0){
     echo"el numero $i es par <br>";
   }else {
-    echo"el numero $i es impar<br>";
+    echo"<span style =color:red >el numero $i es impar<br> </span>";
   }
  }
 
