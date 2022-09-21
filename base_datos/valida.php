@@ -34,7 +34,7 @@ $conexionn = new mysqli($nombreServidor,$nombreUsuario,$pwd,$Basededatos);
  if($conexionn ->connect_error){
     echo "error en la conexion";
 
- }else{
+ } else {
     echo "conexion ok";
  }
 
