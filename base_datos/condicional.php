@@ -47,6 +47,20 @@ switch($variable1 ){
       break;
 }
 
+$i= 1; // los contadores son 
+ 
+while ($i<10){
+  echo " <br>vuelta numero $i <br>";
+  $i++;
+}
+ 
+// no solo se usan con numeros 
+while (($variable3 == "usuario") or($variable3 == "Usuario" )){
+  echo "hola com estas";
+  $variable3="adios";
+  
+}
+// validar 
 
 
 ?>
