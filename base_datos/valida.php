@@ -10,7 +10,7 @@ $recontrasinal = $_POST['recontrasinal'];
 
 $fecha = date('j-m-y');// envia fecha del dia 
 
-                                // punto antes y despues para q concatene  // hueco entre comillas generar espacio 
+   /*                             // punto antes y despues para q concatene  // hueco entre comillas generar espacio 
 echo "los datos recibidos son:" .$nombre." " .$apellido." <br>".$Email." ".$direccion." " .$telefono." ".$edad."<br> ".$contrasinal." " .$recontrasinal;
 echo "<br>".$fecha;
 // vamos generar un archivo de texto no para tabla
@@ -20,18 +20,18 @@ $creofichero = fopen ($archivo , "a"); // creamos funcion  pare que abra la fila
 fwrite($creofichero, $nombre."-" .$apellido. "-" .$Email. "-" .$edad."-" .$telefono."-" .$direccion."-" .$contrasinal."-" .$fecha. "\n"); //escribe en el fichero
 
 fclose($creofichero);
-
+*/
 // conectar base de datos bd
 // creamos 4 variable 
 $nombreServidor = "localhost";
-$nombreUsuario = "Admina";
+$nombreUsuario = "Admin";
 $pwd = "12345";
 $Basededatos = "agenda";
 //creamos la conexion : una  variable mew mysqli con las variable anteriores en el orden exacto.
 $conexionn = new mysqli($nombreServidor,$nombreUsuario,$pwd,$Basededatos);
 
 // probamos conexion 
- if($conexionn -> connect_error){
+ if($conexionn ->connect_error){
     echo "error en la conexion";
 
  }else{
