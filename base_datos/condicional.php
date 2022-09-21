@@ -1,5 +1,5 @@
 <?php
-/*
+
 $variable1 = 5;
 $variable2 = 45;
 $variable3 = 'hola';
@@ -81,14 +81,14 @@ for($i = 0 ; $i<=10 ; $i++){
 for($i = 0 ; $i<=10 ; $i+=2){
   echo "<br> dando voltas $i";
 }
-*/
+
 
 // numero para f
  for($i=1; $i<=100; $i++){
   if ($i%2 == 0){
-    echo"el numero .$i. es par <br>";
+    echo"el numero $i es par <br>";
   }else {
-    echo"el numero .$i. es impar<br>";
+    echo"el numero $i es impar<br>";
   }
  }
 
