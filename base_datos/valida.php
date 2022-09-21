@@ -21,6 +21,25 @@ fwrite($creofichero, $Nombre."-" .$apellido. "-" .$Email. "-" .$edad."-" .$telef
 
 fclose($file);
 
+// conectar base de datos bd
+// creamos 4 variable 
+$nombreServidor = "localhost";
+$nombreUsuario = "Admin";
+$pwd = "12345";
+$Basededatos = "agenda";
+//creamos la conexion : una  variable mew mysqli con las variable anteriores en el orden exacto.
+$conexionn = new mysqli($nombreServidor,$nombreUsuario,$pwd,$Basededatos);
+
+// probamos conexion 
+ if($conexionn -> connect_error){
+    echo "error en la conexion";
+
+ }
+
+
+
+
+
 
 
 
