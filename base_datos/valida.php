@@ -38,11 +38,16 @@ $conexionn = new mysqli($nombreServidor,$nombreUsuario,$pwd,$Basededatos);
     echo "conexion ok";
  }
 
+$sql = "INSERT INTO `usuarios`(`ID`, `NOMBRE`, `APELLIDOS`, `EMAIL`, `TELEFONO`, `DIRECCION`, `EDAD`, `CONTRASINAL`, `FECHA_ALTA`) VALUES 
+  (' ','$nombre', '$apellido', '$Email','$telefono','$direccion','$edad','$contrasinal','$fecha')";
 
+// sentencia que hace ejecutar  es $conexionn -> query ($sql)
 
-
-
-
+ if ($conexionn ->query($sql) ===TRUE){
+    echo "datos guardados";
+ } else{
+    echo "nooo";
+ }
 
 
 ?>
