@@ -63,8 +63,16 @@ while (($variable3 == "usuario") or($variable3 == "Usuario" )){
 // validar 
 
 for($i = 0 ; $i<=10 ; $i++){
+  echo "<br> dando voltas $i <br>";
+}
+// sumamos el valor 2
+for($i = 0 ; $i<=10 ; $i+=2){
   echo "<br> dando voltas $i";
 }
+
+
+
+
 
 
 ?>
