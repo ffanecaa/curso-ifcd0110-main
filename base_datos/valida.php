@@ -17,14 +17,14 @@ echo "<br>".$fecha;
 $archivo ="datosformulario.txt";// variable nombre archivo
 
 $creofichero = fopen ($archivo , "a"); // creamos funcion  pare que abra la fila con el nombre del archivo y la a es que vaya engadindo al final
-fwrite($creofichero, $Nombre."-" .$apellido. "-" .$Email. "-" .$edad."-" .$telefono."-" .$direccion."-" .$contrasinal."-" .$fecha. "\n"); //escribe en el fichero
+fwrite($creofichero, $nombre."-" .$apellido. "-" .$Email. "-" .$edad."-" .$telefono."-" .$direccion."-" .$contrasinal."-" .$fecha. "\n"); //escribe en el fichero
 
-fclose($file);
+fclose($creofichero);
 
 // conectar base de datos bd
 // creamos 4 variable 
 $nombreServidor = "localhost";
-$nombreUsuario = "Admin";
+$nombreUsuario = "Admina";
 $pwd = "12345";
 $Basededatos = "agenda";
 //creamos la conexion : una  variable mew mysqli con las variable anteriores en el orden exacto.
@@ -34,6 +34,8 @@ $conexionn = new mysqli($nombreServidor,$nombreUsuario,$pwd,$Basededatos);
  if($conexionn -> connect_error){
     echo "error en la conexion";
 
+ }else{
+    echo "conexion ok";
  }
 
 
