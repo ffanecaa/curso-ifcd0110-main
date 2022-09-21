@@ -65,7 +65,10 @@ while (($variable3 == "usuario") or($variable3 == "Usuario" )){
     echo"lo que sea";
     $var_bool=false;
   }
-  
+  $k=16;
+  do{
+    echo "entra por lo menos 1 vez"
+  }
 
 // validar 
 
