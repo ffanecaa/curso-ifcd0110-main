@@ -56,7 +56,7 @@ while ($i<=10){
  
 // no solo se usan con numeros 
 while (($variable3 == "usuario") or($variable3 == "Usuario" )){
-  echo "hola com estas";
+  echo "hola com estas <br>";
   $variable3="adios";
 }
   //while booleana
@@ -64,11 +64,12 @@ while (($variable3 == "usuario") or($variable3 == "Usuario" )){
   while($var_bool){
     echo"lo que sea";
     $var_bool=false;
-  }
-  $k=16;
+  }// aunq no se cumpla entra por lo menso uan vez en el bucle.
+  $k=21;
   do{
-    echo "entra por lo menos 1 vez"
-  }
+    echo "<br>entra por lo menos 1 vez";
+    $k++;
+  }while ($k <20);
 
 // validar 
 
