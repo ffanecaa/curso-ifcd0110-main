@@ -58,9 +58,17 @@ while ($i<=10){
 while (($variable3 == "usuario") or($variable3 == "Usuario" )){
   echo "hola com estas";
   $variable3="adios";
-  
 }
+  //while booleana
+  $var_bool =true;
+  while($var_bool){
+    echo"lo que sea";
+    $var_bool=false;
+  }
+  
+
 // validar 
+
 
 for($i = 0 ; $i<=10 ; $i++){
   echo "<br> dando voltas $i <br>";
