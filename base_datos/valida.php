@@ -1,8 +1,12 @@
 <?php
 if (empty($_POST)){
    header ("location:index.html");
-   die();
+   die();  // que no este vacia 
 } else{
+
+
+
+   
 $nombre = htmlspecialchars($_POST['name']); // variable propia de php  para que no injecten codigo
 $apellido = $_POST['apellido'];
 $Email = $_POST['email'];
