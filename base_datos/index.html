@@ -11,22 +11,23 @@
     <h1 class="title">formulario</h1>
     <form action="valida.php" method="POST"name="usuarios" id="form" class="form">
         <label for ="name" >nombre</label>
-        <input id ="name" name ="name" type="text"> <br>
+        <input id ="name" name ="name" type="text" required> <br>
         <label for ="apellido" >apellidos</label>
-        <input id ="apellido"name ="apellido" type="text"> <br>
+        <input id ="apellido"name ="apellido" type="text" required> <br>
         <label for ="email" >email</label>
-        <input id ="email"name ="email" type="email"> <br>
+        <input id ="email"name ="email" type="email"required> <br>
         <label for ="age" >edad</label>
-        <input id ="age"name ="age" type="number"> <br>
+        <input id ="age"name ="age" type="number"required> <br>
         <label for ="tlf" >telefono</label>
         <input id ="tlf"name ="tlf" type="tel"> <br>
         <label for ="tlf" >direccion</label>
-        <input id ="direccion"name ="direccion" type="text"> <br>
+        <input id ="direccion"name ="direccion" type="text"required> <br>
          <label for ="contrasinal" >constrasinal</label>
-        <input id ="contrasinal"name ="contrasinal" type="password"> <br>
+        <input id ="contrasinal"name ="contrasinal" type="password"required> <br>
         <label for ="recontrasinal" >reconstrasinal</label>
-        <input id ="recontrasinal"name ="recontrasinal"type="password"><br>
-        <input  class="botton"type="submit" ><input class="botton" type="reset">
+        <input id ="recontrasinal"name ="recontrasinal"type="password"required><br>
+        <input  class="botton"type="submit" >
+        <input class="botton" type="reset">
     </form>
 </body>
 </html>

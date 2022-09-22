@@ -1,4 +1,8 @@
 <?php
+if (empty($_POST)){
+   header ("location:index.html");
+   die();
+} else{
 $nombre = htmlspecialchars($_POST['name']); // variable propia de php  para que no injecten codigo
 $apellido = $_POST['apellido'];
 $Email = $_POST['email'];
@@ -49,5 +53,5 @@ $sql = "INSERT INTO `usuarios`(`ID`, `NOMBRE`, `APELLIDOS`, `EMAIL`, `TELEFONO`,
     echo "nooo";
  }
 
-
+}
 ?>
