@@ -3,10 +3,13 @@ if (empty($_POST)){
    header ("location:index.html");
    die();  // que no este vacia 
 } else{
+ if(empty($_Post['name'])){
+   echo "campo nombre vacio";
+   die();
+ }else{
 
 
 
-   
 $nombre = htmlspecialchars($_POST['name']); // variable propia de php  para que no injecten codigo
 $apellido = $_POST['apellido'];
 $Email = $_POST['email'];
