@@ -1,13 +1,13 @@
 <?php
 if (empty($_POST)){
-   header ("location:index.html");
-   die();  // que no este vacia 
+   header ("location:index.html"); // genera nueva locvacion 
+   die();  // que no este vacia  el formulario 
 } else{
  if(empty($_POST['name'])){
    echo "campo nombre vacio";
    die();
  }else{
-$nombre = htmlspecialchars($_POST['name']);} // variable propia de php  para que no injecten codigo
+$nombre = htmlspecialchars($_POST['name']);} // variable propia de php  para que no inyecten codigo
 $apellido = $_POST['apellido'];
 $Email = $_POST['email'];
 $direccion = $_POST['direccion'];
@@ -15,6 +15,15 @@ $telefono = $_POST['tlf'];
 $edad = $_POST['age'];
 $contrasinal = $_POST['contrasinal'];
 $recontrasinal = $_POST['recontrasinal'];
+
+//verificar contraseñas son iguales
+if($contrasinal != $recontrasinal){
+    echo "las contraseñas no coinciden";
+    header ("location:index.html");
+    die();
+
+}
+
 
 $fecha = date('j-m-y');// envia fecha del dia 
 
@@ -53,6 +62,7 @@ $sql = "INSERT INTO `usuarios`(`ID`, `NOMBRE`, `APELLIDOS`, `EMAIL`, `TELEFONO`,
 
  if ($conexionn ->query($sql) ===TRUE){
     echo "datos guardados";
+   
  } else{
     echo "nooo";
  }
