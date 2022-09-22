@@ -3,14 +3,11 @@ if (empty($_POST)){
    header ("location:index.html");
    die();  // que no este vacia 
 } else{
- if(empty($_Post['name'])){
+ if(empty($_POST['name'])){
    echo "campo nombre vacio";
    die();
  }else{
-
-
-
-$nombre = htmlspecialchars($_POST['name']); // variable propia de php  para que no injecten codigo
+$nombre = htmlspecialchars($_POST['name']);} // variable propia de php  para que no injecten codigo
 $apellido = $_POST['apellido'];
 $Email = $_POST['email'];
 $direccion = $_POST['direccion'];
@@ -59,6 +56,5 @@ $sql = "INSERT INTO `usuarios`(`ID`, `NOMBRE`, `APELLIDOS`, `EMAIL`, `TELEFONO`,
  } else{
     echo "nooo";
  }
-
 }
 ?>
