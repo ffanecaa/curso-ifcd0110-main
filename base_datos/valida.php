@@ -60,7 +60,7 @@ $sql = "INSERT INTO `usuarios`(`ID`, `NOMBRE`, `APELLIDOS`, `EMAIL`, `TELEFONO`,
 
 // sentencia que hace ejecutar  es $conexionn -> query ($sql)
 
- if ($conexionn ->query($sql) ===TRUE){
+ if ($conexionn ->query($sql) ===TRUE){  //query() ejecuta una sentencia SQL en una única llamada a función, devolviendo el conjunto de resultados (si los hay) que devuelve la sentencia como un objeto PDOStatement.
     echo "datos guardados";
    
  } else{

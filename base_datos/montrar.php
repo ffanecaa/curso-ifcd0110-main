@@ -17,11 +17,11 @@ $conexionn = new mysqli($nombreServidor,$nombreUsuario,$pwd,$Basededatos);
 
  // sentencia para llar sql
 
-$sql = "SELECT * FROM 'usuarios' ";
-
-if ( $resultado= $conexionn -> query ($sql)){
-    while($fila = $resultado -> fetch_assoc()){
-        $ID =$row['ID'];
+$sql = "SELECT * from  `usuarios` ";
+echo "<table border=1>";
+if ($resultado= $conexionn -> query ($sql)){
+    while($row = $resultado -> fetch_assoc()){
+        $ID =$row['ID']; // $ROW E FUNCION DE SQL PARA GENRAR LOS COLUMAS 
         $nombre = $row['NOMBRE']; 
         $apellido =$row['APELLIDOS'];
         $Email= $row['EMAIL']; 
@@ -30,7 +30,20 @@ if ( $resultado= $conexionn -> query ($sql)){
         $edad= $row['EDAD']; 
         $contrasinal= $row['CONTRASINAL']; 
         $fecha= $row['FECHA_ALTA']; 
+
+        echo "<tr>
+              <td> $nombre </td>
+              <td>$apellido</td>
+              <td>$Email</td>
+              <td>$telefono</td>
+              <td>$direccion</td>
+              <td>$edad</td>
+              <td>$contrasinal</td>
+              <td>$fecha</td> ";
+            
     }
+    $resultado -> free ();
+    echo "</table>";
 }
 
 
