@@ -1,5 +1,5 @@
 //1. COMPLETE VARIABLE AND FUNCTION DEFINITIONS
-
+/*
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
@@ -27,7 +27,7 @@ melted into a puddle on the sidewalk
 turned into a slug and crawled away
 
 3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
-*/
+*//*
 randomize.addEventListener('click', result);
 
 function result() {
@@ -45,4 +45,4 @@ function result() {
 
   story.textContent = ;
   story.style.visibility = 'visible';
-}
+}*/

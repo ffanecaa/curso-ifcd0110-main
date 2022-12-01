@@ -38,7 +38,7 @@ function MuestaMiNombre(nombre, altura){
 
 
 //area circulo trianguloy cuadrado
-
+/*
 let figura = prompt("hallaremos el area de una de las siguientes figuras elige: triangulo cuadrado o circulo ");
 let base;
 let altura;
@@ -60,4 +60,10 @@ switch (figura){
         radio = prompt("indica el radio en cm")
         document.getElementById("datos"). innerHTML=(`el area del circulo es ${radio*3.1416}`);
         break;
+}
+*/
+let dias= [];
+for ( let i = 5; i<31;i+=7){
+     i-=2
+    console.log(i)
 }
